@@ -1,0 +1,79 @@
+.container1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+.container2 {
+    border: 1px solid black;
+    width: 400px;
+    height: 600px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column; /* Set the direction of flex items to column */
+    padding:30px;
+    gap:30px;
+}
+h1 {
+    text-align: center; /* Horizontally center the text */
+}
+
+#password{
+    border:none;
+    padding:10px;
+    border-bottom: 1px solid black;
+    font-size:20px;
+    
+}
+#username{
+    border:none;
+    padding:10px;
+    border-bottom: 1px solid black;
+    font-size:20px;
+    
+
+}
+
+#email{
+    border:none;
+    padding:10px;
+    border-bottom: 1px solid black;
+    font-size:20px;
+    
+
+}
+#submit{
+    border:1px solid black;
+    border-radius:20px;
+    padding:30px;
+    background-color: rgba(50, 120, 167, 0.637);
+    font-size:20px;
+   
+    
+}
+#FirstName {
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+#LastName{
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    
+}
+#register{
+    border:1px solid black;
+    border-radius:20px;
+    padding:20px;
+    background-color: rgba(50, 120, 167, 0.637);
+    font-size:20px;
+}

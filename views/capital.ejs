@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country and Capitals Quiz</title>
+</head>
+<body>
+    <h1>Country and Capitals Quiz</h1>
+    <form action="/check-answers" method="POST">
+        <!-- Hidden field to pass the user's email -->
+        <input type="hidden" name="username" value="<%= userEmail %>">
+
+        <ul>
+            <% countries.forEach(function(country) { %>
+                <li>
+                    <label><%= country.country %></label>
+                    <select name="capital_<%= country.id %>">
+                        <option value="">Select Capital</option>
+                        <% countries.forEach(function(option) { %>
+                            <option value="<%= option.capital %>"><%= option.capital %></option>
+                        <% }); %>
+                    </select>
+                </li>
+            <% }); %>
+        </ul>
+        <button type="submit">Submit</button>
+    </form>
+    <% if (score !== null) { %>
+        <h2>Your Score: <%= score %> / <%= countries.length %></h2>
+    <% } %>
+</body>
+</html>
